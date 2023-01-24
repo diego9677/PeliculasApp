@@ -2,14 +2,14 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeScreen } from '../screens/HomeScreen';
 import { DetailScreen } from '../screens/DetailScreen';
-import { Movie } from '../interfaces/MovieInterface';
+import { Movie } from '../interfaces/movieInterfaces';
 
-export type RootStackParams = {
+export type RootStackParamsList = {
   HomeScreen: undefined;
   DetailScreen: Movie;
 }
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<RootStackParamsList>();
 
 export const StackNavigator = () => {
   return (
@@ -17,7 +17,7 @@ export const StackNavigator = () => {
       screenOptions={{
         headerShown: false,
         cardStyle: {
-          backgroundColor: 'white',
+          backgroundColor: '#F1F4F8',
         },
       }}
     >

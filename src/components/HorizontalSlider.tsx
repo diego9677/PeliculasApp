@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, FlatList, Text, StyleSheet} from 'react-native';
-import { Movie } from '../interfaces/MovieInterface';
+import { Movie } from '../interfaces/movieInterfaces';
 import { MoviePoster } from './MoviePoster';
 
 interface Props {

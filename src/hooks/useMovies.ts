@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { movieDB } from '../api/movieDB';
-import { Movie, MovieDBResponse } from '../interfaces/MovieInterface';
+import { Movie, MovieDBResponse } from '../interfaces/movieInterfaces';
 
 interface MoviesState {
   nowPlaying: Movie[];
